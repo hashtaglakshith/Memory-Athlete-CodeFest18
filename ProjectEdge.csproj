@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32F38888-E00B-4E5F-AB84-539431BCE7CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectEdge</RootNamespace>
+    <AssemblyName>ProjectEdge</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\MemoryAthlete\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>MemoryAthlete</ProductName>
+    <PublisherName>Lakshith Nishshanke</PublisherName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>34AACD06F053E65B7238193E13F407A20FA9B21E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProjectEdge_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.8.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IronPython 2.7\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.8.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IronPython 2.7\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite">
+      <HintPath>C:\Program Files\IronPython 2.7\DLLs\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf">
+      <HintPath>C:\Program Files\IronPython 2.7\DLLs\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.2.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IronPython 2.7\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.2.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\IronPython 2.7\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Created Classes\CosineSimilarity.cs" />
+    <Compile Include="Created Classes\dataBase.cs" />
+    <Compile Include="Created Classes\marks.cs" />
+    <Compile Include="Created Classes\palaceLoader.cs" />
+    <Compile Include="Created Classes\processControl.cs" />
+    <Compile Include="Created Classes\succesRate.cs" />
+    <Compile Include="Created Classes\tools.cs" />
+    <Compile Include="Created Classes\whois.cs" />
+    <Compile Include="Created Classes\ethaksalawa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created Classes\ethaksalawa.Designer.cs">
+      <DependentUpon>ethaksalawa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\AdditionalFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\AdditionalFeatures.Designer.cs">
+      <DependentUpon>AdditionalFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\addPics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\addPics.Designer.cs">
+      <DependentUpon>addPics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created Classes\classHandler.cs" />
+    <Compile Include="Created Classes\clipArtHandler.cs" />
+    <Compile Include="Created Classes\dataHandler.cs" />
+    <Compile Include="Created Classes\description.cs" />
+    <Compile Include="Created UI%28s%29\faceTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\faceTest.Designer.cs">
+      <DependentUpon>faceTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\MemoryPalaceViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\MemoryPalaceViewer.Designer.cs">
+      <DependentUpon>MemoryPalaceViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\newTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\newTest.Designer.cs">
+      <DependentUpon>newTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\similar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\similar.Designer.cs">
+      <DependentUpon>similar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\study.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\study.Designer.cs">
+      <DependentUpon>study.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\testMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\testMemory.Designer.cs">
+      <DependentUpon>testMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\userSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\userSetup.Designer.cs">
+      <DependentUpon>userSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\wikipedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\wikipedia.Designer.cs">
+      <DependentUpon>wikipedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\imagePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\imagePicker.Designer.cs">
+      <DependentUpon>imagePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\NewDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\NewDescription.designer.cs">
+      <DependentUpon>NewDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created UI%28s%29\NewWordList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Created UI%28s%29\NewWordList.designer.cs">
+      <DependentUpon>NewWordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Created Classes\paragraph.cs" />
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Created Classes\WordList.cs" />
+    <Compile Include="user.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Created Classes\ethaksalawa.resx">
+      <DependentUpon>ethaksalawa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\AdditionalFeatures.resx">
+      <DependentUpon>AdditionalFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\addPics.resx">
+      <DependentUpon>addPics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\faceTest.resx">
+      <DependentUpon>faceTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\imagePicker.resx">
+      <DependentUpon>imagePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\MemoryPalaceViewer.resx">
+      <DependentUpon>MemoryPalaceViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\NewDescription.resx">
+      <DependentUpon>NewDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\newTest.resx">
+      <DependentUpon>newTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\NewWordList.resx">
+      <DependentUpon>NewWordList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\similar.resx">
+      <DependentUpon>similar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\study.resx">
+      <DependentUpon>study.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\testMemory.resx">
+      <DependentUpon>testMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\userSetup.resx">
+      <DependentUpon>userSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Created UI%28s%29\wikipedia.resx">
+      <DependentUpon>wikipedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ProjectEdge_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\user.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcrobatAccessLib">
+      <Guid>{C523F390-9C83-11D3-9094-00104BD0D535}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
